@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practicando</title>
+</head>
+
+
+<body>
+    <script>
+
+        function saltarlínea() {
+            document.write("<br>");
+            document.write ("<br>");
+            document.write ("<br>"); 
+        }  
+        //Se utiliza una función para evitar escribir reiteradamente document.write ("<br>"), la función tiene que
+        //ser un verbo 
+        //eliminamos let saltodelinea= (<"br">)
+        
+        function imprimir (frase) {
+            document.write (frase)
+            saltarlínea ();
+        }
+
+        let año = 2022;
+        let saltodelínea= "<br><br><br>";
+         
+        saltarlínea ();
+
+
+        imprimir ("Hola");
+        saltarlínea ();
+
+       // document.write("Marlene tiene : " + (año - 1995) + " años"); //en lugar de hacer toda esta función podemos hacer
+       //la siguiente; 
+
+       //este código calcula la edad de las siguientes mujeres 
+        imprimir ("Marlene tiene : " + (año - 1995) + " años");
+
+        saltarlínea();
+
+       // document.write("Rebeca tiene : " + (año - 1978) + " años"); 
+        imprimir ("Rebeca tiene : " + (año - 1978) + " años");
+        saltarlínea();
+        año = 2030
+
+       // document.write("Jovana tiene : " + (año - 1998) + " años");
+        imprimir ("Jovana tiene : " + (año - 1998) + " años");
+        saltarlínea ();
+
+        // document.write("Paola tiene : " + (año - 1997) + " años");
+        imprimir ("Paola tiene : " + (año - 1997) + " años"); 
+        saltarlínea ();
+
+        // document.write("Carla tiene : " + (año - 1999) + " años");
+        imprimir ("Carla tiene : " + (año - 1999) + " años");
+        saltarlínea ();
+
+        //document.write("Perla tiene : " + (año - 1997) + " años");
+        imprimir ("Perla tiene : " + (año - 1997) + " años");
+        
+
+    </script>
+</body>
+</html>

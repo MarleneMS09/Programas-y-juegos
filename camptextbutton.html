@@ -1,0 +1,29 @@
+<meta charset="UFT-8">
+<h1>PROGRAMA JUEGO SECRETO </h1>
+<input>
+<button> Verificar si acertó con el secreto</button>
+<script>
+let secreto= Math.round (Math.random ()*10);
+let input = document.querySelector ("input");
+input.focus ();
+
+function verificar () {
+
+if (parseInt (input.value) == (secreto)) {
+    alert("Usted acertó");
+}
+ else {
+ alert ("Usted erró");
+ }
+    input.value == ""; 
+    input.focus ();
+}
+
+let button = document.querySelector ("button");
+button.onclick =verificar;
+
+
+</script>
+
+<!--Con el input value se agrega una mejora -->
+<!--input.focus sirve para decir que se focalice en esa casilla-->

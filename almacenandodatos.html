@@ -1,0 +1,133 @@
+<meta charset="UFT-8">
+<h1>PROGRAMA JUEGO SECRETO </h1>
+<input>
+<button> Verificar si acertó con el secreto</button>
+<script>
+
+
+    function aleatorio() {
+        return Math.round(Math.random() * 10);
+
+    }
+
+    function sorteoNumeros(cantidad) {
+        let secretos = []
+        let contador = 1;
+        while (contador <= cantidad) {
+            let numeroAleatorio = aleatorio();
+            console.log(numeroAleatorio);
+            let encontrado = false;
+
+
+            if (numeroAleatorio != 0) {
+
+                for (let posicion = 0; secretos.length; position++) {
+                    if (numeroAleatorio == secretos[posicion]) {
+                        encontrado = true;
+                        break;
+                    }
+                }
+
+                if (encontrado == false) {
+                    secretos.push(numeroAleatorio);
+                    contador++
+                }
+
+            }
+
+
+        }
+
+        return secretos
+
+    }
+
+    let secreto = sorteoNumeros[4];
+    console.log(secretos);
+
+
+    let input = document.querySelector("input");
+    input.focus();
+
+
+    function verificar() {
+
+        let encontrado = false;
+
+        for (let posicion = 0; posicion < secretos.length; posicion++) {
+
+            if (parseInt(input.value) == secretos[posicion]) {
+                alert("Usted acertó");
+                encontrado = true;
+                break;
+            }
+        }
+
+
+        if (encontrado == false) {
+            alert("usted erró");
+
+        }
+
+
+        alert("usted erró");
+
+        input.value == "";
+        input.focus();
+    }
+
+
+
+</script>
+<!--con el valor push le paso los valores en secreto en lugar de mostrar un array let secreto = [3, 5, 7, 9]; --->
+
+<!---let secreto = [];
+secretos.push (3);
+secretos.push (5);
+secretos.push (7);
+secretos.push (9);
+--->
+
+<!---
+se elimia esto
+ let secreto = [];
+    secretos.push (aleatorio());
+    secretos.push (aleatorio());
+    secretos.push (aleatorio());
+    secretos.push (aleatorio());
+se sustituye por una función 
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let button = document.querySelector("button");
+button.onclick = verificar;
+
+
+</script>
+<!--- se quta el else 
+
+else {
+            alert("Usted erró");
+        } y se coloca un alert 
+
+-->

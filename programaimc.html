@@ -1,0 +1,27 @@
+<meta charset="UFT-8">
+<h1> Programa | IMC </h1> 
+
+<script>
+    function saltarLínea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+    document.write (frase);
+    saltarLínea ();
+
+    }
+    
+   function calcularImc(peso,altura,nombre) {
+    imc = peso / (altura * altura);
+    imprimir ("El imc calculado de "  + nombre  +  " es " +  imc );
+    return (imc);
+   }
+
+   calcularImc (53, 1.71, "Marlene")
+   calcularImc (55, 1.54, "Rebeca")
+
+</script>
+

@@ -1,0 +1,50 @@
+<meta charset="UFT-8">
+<h1> Programa - calcular la media de las edades de una familia </h1>
+
+<script>
+
+    //calcular imc con interacción de usuario
+    function saltarLínea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLínea();
+    }
+
+  
+    let numeroMiembros = parseInt(prompt("ingrese la cantidad de miembros de su familia"));
+    let contador =1;
+     let totalEdades = 0;
+   while (contador <= numeroMiembros) {
+    
+    edad= parseInt(prompt("ingrese la edad del familiar"));
+    totalEdades = totalEdades + edad;
+    (contador++)
+    }
+
+   mediaEdades = totalEdades/numeroMiembros;
+    imprimir ("la media de las edades de ka familia es " + mediaEdades);
+
+    imprimir (totalEdades)
+    imprimir ("fin")
+
+
+
+ /* edadPadre = 42;
+ edadMadre= 38;
+ edadHijo1= 15;
+ edadHija1= 12;
+ edadHijo3=10;
+ 
+ let totalEdad = edadPadre + edadMadre + edadHijo1 + edadHija1 + edadHijo3; 
+ let mediaEdad= totalEdad /4; 
+
+ imprimir ("La media de las edades es "  + mediaEdad); */
+
+
+
+</script>

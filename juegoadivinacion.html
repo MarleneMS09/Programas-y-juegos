@@ -1,0 +1,30 @@
+<meta charset="UFT-8">
+<h1> Programa | IMC </h1>
+
+<script>
+
+    //calcular imc con interacción de usuario
+    function saltarLínea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLínea();
+
+    }
+let numeroPensado = Math.round (Math.random()*10); 
+let numeroLanzado= parseInt (prompt ("ingrese un número entre 0-10"));
+
+if (numeroPensado == numeroLanzado) {
+ imprimir ("usted acertó");
+}
+else  { imprimir ("usted erró, el número pensando era" + numeroPensando);
+}
+
+   
+
+
+</script>

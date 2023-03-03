@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h1> Simulando pantalla de inicio de sesión | ejercicio</h1>
+<script>
+
+    let inicioDeSesionRegistrado = "usuario";
+   let contrasenhaRegistrada = "contraseña351";
+
+    let maximoIntentos = 3;
+    let  intentoActual = 1;
+
+    while(intentoActual <= maximoIntentos){
+        let inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        let contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if(inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada){
+            alert("Bienvenido al sistema" + inicioDeSesionIngresado);
+            intentoActual = maximoIntentos; 
+        } else {
+            if (intentoActual == 3) {
+                alert("Agotaste el número permitido de intentos!");
+            } else {
+                alert("Inicio de sesión inválido. Favor intente de nuevo");
+            }
+        }
+
+
+        intentoActual = intentoActual +1           
+    }
+
+</script>

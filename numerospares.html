@@ -1,0 +1,59 @@
+<meta charset="UFT-8">
+<h1> Programa - calcular números pares </h1>
+
+<script>
+
+    //calcular imc con interacción de usuario
+    function saltarLínea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLínea();
+    }
+
+  
+    let contadornumeropar=2
+    
+   while (contadornumeropar <=100) {
+    
+    edad= parseInt(prompt("ingrese la edad del familiar"));
+   if ((contadornumeropar%2) ==0){ imprimir (contador); 
+     contadornumeropar= contadornumeropar+2 }
+    contador=contador+2
+} 
+
+    imprimir ("end")
+
+</script>
+
+
+<!--
+<meta charset="UTF-8">
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var contador = 2;
+    while(contador <= 100) {
+        imprimir(contador);
+        contador = contador + 2; // incrementar de dos en dos
+    }
+    imprimir("FIN");
+</script>
+
+
+
+
+
+
+-->

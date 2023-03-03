@@ -1,0 +1,30 @@
+<meta charset="UFT-8">
+<h1> Programa - calcular la tabla de multiplicar </h1>
+
+<script>
+
+    //calcular imc con interacción de usuario
+    function saltarLínea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLínea();
+
+    }
+let añoMundial=1930;
+let limite = parseInt(prompt("Ingrese el año límite para calcular"))
+alert ("Hubo Mundial de la FIFA en el año " +añoMundial);
+
+while (añoMundial <= limite) {
+añoMundial= añoMundial+4;
+imprimir ("Hubo Mundial de la FIFA en el año " +añoMundial);
+}
+
+imprimir(fin)
+
+</script>
+

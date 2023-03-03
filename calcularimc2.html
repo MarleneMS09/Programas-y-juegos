@@ -1,0 +1,29 @@
+<meta charset="UFT-8">
+<h1> Programa | IMC </h1> 
+
+<script>
+    //trabajar de manera eficiente y concreta nuestro código 
+    function saltarLínea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    }
+    
+    function imprimir(frase) {
+    document.write (frase);
+    saltarLínea ();
+
+    }
+    
+   function calcularImc(peso,altura) {
+    return (peso / (altura * altura));
+    
+    
+   }
+   
+  
+imprimir ("El promedio del imc calculado de Marlene y Rebeca es : " + (calcularImc(53, 1.71)+ calcularImc (73, 1.73))/2);
+imprimir ("El promedio del imc calculado de Tamara y Carla es : " + (calcularImc(57, 1.60)+ calcularImc (72, 1.71))/2);
+</script>
+
+
